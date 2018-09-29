@@ -17,7 +17,6 @@ This tool can be used only on Windows because of Nvidia tool restriction.
 1. Run start.bat
 2. Make some changes
 3. Save changes to mod 
-???
 4. Profit*
 
 ```
