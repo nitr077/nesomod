@@ -8,6 +8,7 @@ This tool can be used only on Windows because of Nvidia tool restriction.
 
 ### Prerequisites
 
+* Windows 7 or newer **x64**
 * [Java 1.8+](https://java.com/ru/download/)
 * [Python 3.7](https://www.python.org/downloads/)
 * LayeredFS skills
