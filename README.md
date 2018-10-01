@@ -26,7 +26,7 @@ This tool can be used only on Windows because of Nvidia tool restriction.
 
 ## Credits
 Thanks
-* [Stella/AboodXD] (https://github.com/aboood40091) for XTX_extractor
+* [Stella/AboodXD](https://github.com/aboood40091) for XTX_extractor
 * AnalogMan for zlib_compressor
 
 ## Licenses
