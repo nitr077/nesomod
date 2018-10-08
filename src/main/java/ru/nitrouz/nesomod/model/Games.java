@@ -74,7 +74,7 @@ public class Games {
             if (success = FileUtil.removeDeleted(deletedGames)) deletedGames.clear();
             if (success = FileUtil.changeImages(imageChanged)) imageChanged.clear();
             FileUtil.saveChanges(lclassics);
-            if (success) JOptionPane.showMessageDialog(null, "Изменения сохранены успешно!");
+            if (success) JOptionPane.showMessageDialog(null, "Success!");
         }
     }
 
@@ -145,7 +145,7 @@ public class Games {
                 players = selectedGame.getPlayers();
             } else {
                 code = crc;
-                JOptionPane.showMessageDialog(null, "Не удалось найти информацию о выбранной игре!");
+                JOptionPane.showMessageDialog(null, "Couldn't find game info!");
             }
             rom = "/titles/" + code + "/" + code + ".nes";
             cover = "/titles/" + code + "/" + code + ".xtx.z";
@@ -176,7 +176,7 @@ public class Games {
             Files.copy(selectedFile.toPath(), outputNes.toPath(), StandardCopyOption.REPLACE_EXISTING);
             redrawList();
         } catch (IOException e) {
-            JOptionPane.showMessageDialog(null, "При открытии файла произошла ошибка!");
+            JOptionPane.showMessageDialog(null, "There was an error while opening file!");
             e.printStackTrace();
         }
     }
@@ -219,7 +219,7 @@ public class Games {
             }
             return temp.getTitle();
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "При сохранении изменений произошла ошибка!");
+            JOptionPane.showMessageDialog(null, "Couldn't commit changes!");
             e.printStackTrace();
         }
         return null;
